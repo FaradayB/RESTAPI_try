@@ -6,4 +6,4 @@ to run the program
 
 2. Run app.py
 
-3. Open http://127.0.0.1/home
+3. Open http://127.0.0.1:5000/home
