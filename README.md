@@ -2,7 +2,7 @@
 RESTAPI for GET and POST methods
 
 
-NB:
+NOTE:
 must download requirements.txt in terminal
 ```
 pip install -r requirements.txt
