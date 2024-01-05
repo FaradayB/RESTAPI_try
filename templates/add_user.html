@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Add User Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Custom styles for centering content */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .toggle-button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="col-md-6 mx-auto" id="addUserForm">
+        <h2 class="text-center">Add User</h2>
+        <form method="POST" action="{{ url_for('add_user') }}">
+            <div class="form-group">
+                <label for="addUsername">Username</label>
+                <input type="text" class="form-control" id="addUsername" name="username" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="addPassword">Password</label>
+                <input type="password" class="form-control" id="addPassword" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="addName">Name</label>
+                <input type="text" class="form-control" id="addName" name="name" placeholder="Enter user's name">
+            </div>
+            <div class="form-group">
+                <label for="addEmail">Email address</label>
+                <input type="email" class="form-control" id="addEmail" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Add User</button>
+        </form>
+    </div>
+    
+    <div class="col-12 text-center toggle-button">
+        <a class="btn btn-dark" href="{{ url_for('home') }}">Back to Home</a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
